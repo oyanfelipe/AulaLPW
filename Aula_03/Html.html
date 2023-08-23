@@ -31,15 +31,15 @@
       <p id="resultadodiv"></p>
 
     <script>
-            let num1;
-            let num2;
-
+        let num1;
+        let num2;
+        
+        function soma(){
+            let soma;
+           
             num1 = Number(document.getElementById("num1").value);
             num2 = Number(document.getElementById("num2").value);
 
-        function soma(){
-            let soma;
-        
             soma = num1 + num2; //soma
 
             document.getElementById("resultadosoma").innerText = soma;
@@ -47,6 +47,9 @@
 
         function subtracao(){
             let subtracao;
+
+            num1 = document.getElementById("num1").value;
+            num2 = document.getElementById("num2").value;
 
             subtracao = num1 - num2; //subtração
 
@@ -56,6 +59,9 @@
         function multiplicacao(){
             let multi;
 
+            num1 = document.getElementById("num1").value;
+            num2 = document.getElementById("num2").value;
+
             multi = num1 * num2; //multipicacao
 
             document.getElementById("resultadomulti").innerText = multi;
@@ -63,6 +69,9 @@
 
         function divisao(){
             let div;
+
+            num1 = document.getElementById("num1").value;
+            num2 = document.getElementById("num2").value;
 
             div = num1 / num2; //divisao
 
