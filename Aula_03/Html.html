@@ -8,15 +8,22 @@
 <body>
     <h1>Formulário</h1>
     <form >
-        <label for="num1">First name:</label><br>
-        <input type="text" id="num1" name="num1" value=""><br>
-        <label for="num2">Last name:</label><br>
-        <input type="text" id=" num2" name="num2" value=""><br><br>
+        <label for="num1">Primeiro número:</label><br>
+        <input type="text" id="num1" name="num1"><br>
+        <label for="num2">Segundo número:</label><br>
+        <input type="text" id=" num2" name="num2"><br><br>
       </form> 
       <input type="submit" value="Somar">
     <script>
-        var olamundo ="";
-        document.getElementById("resultado").innerHTML = olamundo;
+        function soma(){
+            let num1;
+            let num2;
+            let soma;
+        }
+
+        num1 = document.getElementById("num1").value;
+        num2 = document.getElementById("num2").value;
+
     </script>
 </body>
 </html>
