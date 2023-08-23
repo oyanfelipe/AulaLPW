@@ -13,7 +13,8 @@
         <label for="num2">Segundo número:</label><br>
         <input type="text" id="num2" name="num2"><br><br>
       </form> 
-      <button onclick="calculo()">Somar</button>
+      <button onclick="soma()">Somar</button>
+      <button onclick="subtracao()">Somar</button>
 
       <p >Soma</p>
       <p id="resultadosoma"></p>
@@ -22,20 +23,28 @@
       <p id="resultadosubtracao"></p>
 
     <script>
-        function calculo(){
-            let num1;
-            let num2;
+        let num1;
+        let num2;
+        
+        function soma(){
             let soma;
+           
+            num1 = Number(document.getElementById("num1").value);
+            num2 = Number(document.getElementById("num2").value);
+
+            subtracao = num1 - num2; //subtração
+
+            document.getElementById("resultadosoma").innerText = soma;
+        }
+        
+        function subtracao(){
             let subtracao;
 
             num1 = Number(document.getElementById("num1").value);
             num2 = Number(document.getElementById("num2").value);
 
-            soma = num1 + num2; //soma
-
             subtracao = num1 - num2; //subtração
 
-            document.getElementById("resultadosoma").innerText = soma;
             document.getElementById("resultadosubtracao").innerText = subtracao;
         }
 
