@@ -1,0 +1,13 @@
+.divp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.div1 {
+    color: green;
+}
+
+.div2 {
+    color: blue;
+}

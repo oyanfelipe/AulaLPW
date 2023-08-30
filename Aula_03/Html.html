@@ -3,32 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Formulário</h1>
-    <form >
-        <label for="num1">Primeiro número:</label><br>
-        <input type="text" id="num1" name="num1"><br>
-        <label for="num2">Segundo número:</label><br>
-        <input type="text" id="num2" name="num2"><br><br>
-      </form> 
-      <button onclick="soma()">Soma</button>
-      <button onclick="subtracao()">Subtração</button>
-      <button onclick="multiplicacao()">Multiplicação</button>
-      <button onclick="divisao()">Divisão</button>
-
-      <p >Soma</p>
-      <p id="resultadosoma"></p>
-      <br>
-      <p >Subtração</p>
-      <p id="resultadosubtracao"></p>
-      <br>
-      <p >Multiplicação</p>
-      <p id="resultadomulti"></p>
-      <br>
-      <p >Divisão</p>
-      <p id="resultadodiv"></p>
+    <div class="divp">
+        <div>
+            <h1 class="div1">Formulário</h1>
+    
+            <form >
+                <label for="num1">Primeiro número:</label><br>
+                <input type="text" id="num1" name="num1"><br>
+                <label for="num2">Segundo número:</label><br>
+                <input type="text" id="num2" name="num2"><br><br>
+            </form> 
+    
+            <p >Soma</p>
+            <p id="resultadosoma"></p>
+            <br>
+            <p >Subtração</p>
+            <p id="resultadosubtracao"></p>
+            <br>
+            <p >Multiplicação</p>
+            <p id="resultadomulti"></p>
+            <br>
+            <p >Divisão</p>
+            <p id="resultadodiv"></p>
+        </div>
+        
+    
+        <div class="div2">
+            <button onclick="soma()">Soma</button>
+            <button onclick="subtracao()">Subtração</button>
+            <button onclick="multiplicacao()">Multiplicação</button>
+            <button onclick="divisao()">Divisão</button>
+        </div>
+    </div>
 
     <script>
         let num1;
