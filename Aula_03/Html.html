@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculo</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="divp">
@@ -33,6 +33,26 @@
         
     
         <div class="div2">
+            <!--
+            <h1>Custom Radio Buttons</h1>
+            <label class="container">Soma
+            <input type="radio" checked="checked" name="radio" onclick="soma()">
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">Subtração
+            <input type="radio" name="radio" onclick="subtracao()">
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">Multiplicação
+            <input type="radio" name="radio" onclick="multiplicacao()">
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">Divisão
+            <input type="radio" name="radio" onclick="divisao()">
+            <span class="checkmark"></span>
+            </label>
+            -->
+
             <button onclick="soma()">Soma</button>
             <button onclick="subtracao()">Subtração</button>
             <button onclick="multiplicacao()">Multiplicação</button>
@@ -41,16 +61,19 @@
     </div>
 
     <script>
+
         let num1;
         let num2;
         
         function soma(){
             let soma;
            
-            num1 = Number(document.getElementById("num1").value);
-            num2 = Number(document.getElementById("num2").value);
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var num3 = 10;
 
-            soma = num1 + num2; //soma
+            soma = num1 += num2;
+
 
             document.getElementById("resultadosoma").innerText = soma;
         }
