@@ -15,11 +15,17 @@
         
         function repeticao(){
             var n = 0;
+            var controle = true;
+            var acc = 0;
 
-
-            while(n<11){
+            while(controle){
                 if (n%2 == 0) {
                     document.getElementById("resultado").innerText += n;
+                    acc++;
+                    if (acc = 10) {
+                        controle = false;
+                    }
+                    n++;
                 }
                 
                 n ++;
