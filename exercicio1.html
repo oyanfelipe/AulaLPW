@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 class="div1">Formulário</h1>
+
+        <form >
+            <label for="nome">Primeiro número:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+        </form> 
+
+        <p >O nome é:</p>
+        <p id="nome"></p>
+        <p id="texto"></p>
+
+        <br>
+    </div>
+
+
+    <script>
+            
+        var nome = Number(document.getElementById("nome").value);
+        primeironome = nome.substr(0, 1);
+
+        let texto1 = "O nome começa com letra maiúscula";
+        let texto2 = "O nome começa com letra minúscula";
+
+
+        
+        if (primeironome == toUpperCase())
+            document.getElementById("texto").innerText = texto1;
+        else if (primeironome == toLowerCase())
+        document.getElementById("texto").innerText = texto2;
+
+    </script>
+</body>
+</html>
