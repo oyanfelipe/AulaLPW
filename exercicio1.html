@@ -30,15 +30,13 @@
         function verificar(){
             primeironome = nome.substr(0, 1);
 
-            let texto1 = "O nome começa com letra maiúscula";
-            let texto2 = "O nome começa com letra minúscula";
-
-            document.getElementById("texto").innerText = texto1;
+            let texto0 = "Recebeu a letra 'A' no início do nome";
+            let texto1 = "Não recebeu a letra 'A' no início do nome";
             
-            if (primeironome = "A")
-                document.getElementById("texto").innerText = texto1;
-            else if (primeironome = "a")
-            document.getElementById("texto").innerText = texto2;
+            if (primeironome = "A" || "a")
+                document.getElementById("texto").innerText = texto0;
+            else
+            document.getElementById("texto").innerText = texto1;
 
         }
     </script>
