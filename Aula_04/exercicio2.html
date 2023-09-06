@@ -7,7 +7,9 @@
 </head>
 <body>
     <title>Exibir numeros de 1 a 10 usando laço de repetição while</title>
-    <p></p>
+    
+    <button onclick="repeticao()">Exibir</button>
+    <p id="resultado"></p>
 
     <script>
         var n = 0;
@@ -17,6 +19,8 @@
             while(n<9){
                 n ++;
                 x += n;
+                
+                document.getElementById("resultado").innerText = x;
             }
         }
     </script>
