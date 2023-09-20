@@ -17,7 +17,12 @@
       <input id = "c4">
       <input id = "c5">
       <br>
-      <button onclick="media()">Exibir</button>
+      <button onclick="media(
+        Number(document.getElementById('c2').value),
+        Number(document.getElementById('c2').value),
+        Number(document.getElementById('c2').value),
+        Number(document.getElementById('c2').value),
+        Number(document.getElementById('c2').value),)">Exibir</button>
       <br>
 
       <p>Resultado: </p>
@@ -31,11 +36,7 @@
             var soma = 0;
             var quantidade = 0;
 
-            var num1 = Number(document.getElementById("c1").value);
-            var num2 = Number(document.getElementById("c2").value);
-            var num3 = Number(document.getElementById("c3").value);
-            var num4 = Number(document.getElementById("c4").value);
-            var num5 = Number(document.getElementById("c5").value);
+            
 
            
             for(var i = 0; i < arguments.length; i++){
