@@ -3,12 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calcule IMC</title>
 </head>
 <body>
+    <Title>Calcule IMC</Title>
 
-    
+    <form >
+        <label for="num1">Digite o peso:</label><br>
+        <input type="text" id="peso" name="peso"><br>
+        <label for="num2">Digite a altura:</label><br>
+        <input type="text" id="altura" name="altura"><br><br>
+    </form> 
+    <button onclick="calcimc()">Calcular</button>
+
+    <p >Resultado</p>
+    <p id="resultado"></p>
+    <p >Situação</p>
+    <p id="situacao"></p>
+
+
+
     <script>
+
+         function calcimc(){
+            let peso = document.getElementById("peso").value;
+            let altura = document.getElementById("altura").value;
+            let resultado 
+
+            resultado = peso (altura * 2)
+        
+            document.getElementById("resultado").innerText = resultado;
+
+            if (resultado < 17) {
+                document.getElementById("situacao").innerText = " Muito abaixo do peso";
+            } 
+            if (17 < resultado && resultado < 18.49 ) {
+                document.getElementById("texto").innerText = "Abaixo do peso";
+            } 
+            if (18.5 < resultado && resultado < 24.99 ){
+                document.getElementById("texto").innerText = " Peso normal";
+            }
+            if (25 < resultado && resultado < 29.99 ){
+                document.getElementById("texto").innerText = " Acima do peso";
+            }
+            if (30 < resultado && resultado < 34.99 ){
+                document.getElementById("texto").innerText = "Obesidade I";
+            }
+            if (35 < resultado && resultado < 39.99 ){
+                document.getElementById("texto").innerText = " Obesidade II (severa)";
+            }
+            if (resultado > 40){
+                document.getElementById("texto").innerText = "Obesidade III (mórbida)";
+            }
+            
+
+        }
 
     </script>
 </body>
