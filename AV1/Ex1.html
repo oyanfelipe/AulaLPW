@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+</head>
+<body>
+    
+    <h1>Cálculo questão 1</h1>
+    <form >
+        <label for="num1">Primeiro número:</label><br>
+        <input type="text" id="num1" name="num1"><br>
+        <label for="num2">Segundo número:</label><br>
+        <input type="text" id="num2" name="num2"><br><br>
+    </form> 
+
+     <h1>Formulário</h1>
+    <form >
+        <label for="num1">Primeiro número:</label><br>
+        <input type="text" id="num1" name="num1"><br>
+        <label for="num2">Segundo número:</label><br>
+        <input type="text" id="num2" name="num2"><br><br>
+    </form> 
+
+    <div>
+        <button onclick="soma()">Soma</button>
+        <button onclick="subtracao()">Subtração</button>
+        <button onclick="multiplicacao()">Multiplicação</button>
+        <button onclick="divisao()">Divisão</button>
+    </div>
+    
+    <p >Soma</p>
+        <p id="resultadosoma"></p>
+        <br>
+        <p >Subtração</p>
+        <p id="resultadosubtracao"></p>
+        <br>
+        <p >Multiplicação</p>
+        <p id="resultadomulti"></p>
+        <br>
+        <p >Divisão</p>
+        <p id="resultadodiv"></p>
+
+    <script>
+
+        let num1;
+        let num2;
+        
+        function soma(){
+            let soma;
+           
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var num3 = 10;
+
+            soma = num1 += num2;
+
+
+            document.getElementById("resultadosoma").innerText = soma;
+        }
+
+        function subtracao(){
+            let subtracao;
+
+            num1 = document.getElementById("num1").value;
+            num2 = document.getElementById("num2").value;
+
+            subtracao = num1 - num2; //subtração
+
+            document.getElementById("resultadosubtracao").innerText = subtracao;
+        }
+
+        function multiplicacao(){
+            let multi;
+
+            num1 = document.getElementById("num1").value;
+            num2 = document.getElementById("num2").value;
+
+            multi = num1 * num2; //multipicacao
+
+            document.getElementById("resultadomulti").innerText = multi;
+        }
+
+        function divisao(){
+            let div;
+
+            num1 = document.getElementById("num1").value;
+            num2 = document.getElementById("num2").value;
+
+            div = num1 / num2; //divisao
+
+            document.getElementById("resultadodiv").innerText = div;
+        }
+
+    </script>
+      
+</body>
+</html>
