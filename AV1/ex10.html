@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 9 - Exibir numeros de 20 a 40</title>
+</head>
+<body>
+    <h1>Somar numeros pares de 10 a 30</h1>
+    
+    <button onclick="repeticao()">Exibir</button>
+    <p id="resultado"></p>
+
+    <script>
+        
+        function repeticao(){
+            var n = 10;
+            while (n <= 30) {
+
+                document.getElementById("resultado").innerText += n;
+                n =+ 2;
+        }
+    }
+    </script>
+</body>
+</html>
