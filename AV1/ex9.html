@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exibir os 10 primeiros numeros pares usando while</h1>
+    
+    <button onclick="repeticao()">Exibir</button>
+    <p id="resultado"></p>
+
+    <script>
+        
+        function repeticao(){
+            var n = 20;
+            var controle = true;
+            var acc = 0;
+
+            while(controle){
+                if (n%2 == 0) {
+                    document.getElementById("resultado").innerText += n;
+                    acc++;
+                }
+
+                if (acc = 10) {
+                        controle = false;
+                    }
+                n++;
+            }
+        }
+    </script>
+</body>
+</html>
