@@ -7,7 +7,7 @@
 </head>
 <body>
     <form >
-        <label for="nome">Digite seu primeiro nome:</label><br>
+        <label for="nome">Digite seu nome:</label><br>
         <input type="text" id="nome" name="nome"><br>
         <label for="nome">Digite sua idade:</label><br>
         <input type="text" id="idade" name="idade"><br>
@@ -28,7 +28,7 @@
 
             if (0 == idade && idade < 12) {
                 resultado = (nome + " você é uma criança");
-                document.getElementById("resultado").innerText = resultado;
+                document.getElementById("resultado").innerText = nome + " você é uma criança";
             } else if (13 < idade && idade < 17) {
                 resultado = (nome + " você é um adolescente");
                 document.getElementById("resultado").innerText = resultado;
