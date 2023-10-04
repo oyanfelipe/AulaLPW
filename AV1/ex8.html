@@ -26,7 +26,7 @@
             let idade = document.getElementById("idade").value;
             let resultado;
 
-            if (0 == idade && idade < 12) {
+            if (0 < idade && idade < 12) {
                 resultado = (nome + " você é uma criança");
                 document.getElementById("resultado").innerText = resultado;
             } else if (13 < idade && idade < 17) {
