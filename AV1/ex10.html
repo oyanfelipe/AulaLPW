@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questão 9 - Exibir numeros de 20 a 40</title>
+    <title>Questão 10 - Calcular numeros pares de 10 e 30</title>
 </head>
 <body>
-    <h1>Somar numeros pares de 10 a 30</h1>
+    <h1>Calcular numeros pares de  10 e 30</h1>
     
     <button onclick="repeticao()">Exibir</button>
     <p id="resultado"></p>
 
     <script>
+        function repeticao() {
+            var soma = 0;
         
-        function repeticao(){
-            var n = 10;
-            while (n <= 30) {
-                n += 2
-                
-                
-
-                document.getElementById("resultado").innerText += n;
-                
+            for (var i = 10; i <= 30; i++) {
+                if (i % 2 === 0) {
+                    soma += i;
+                }
+            }
+        
+            document.getElementById('resultado').textContent = 'A soma dos números pares entre 10 e 30 é: ' + soma;
         }
-    }
-    </script>
+            </script>
 </body>
 </html>
+

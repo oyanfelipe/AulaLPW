@@ -13,20 +13,21 @@
         <input type="text" id="palavra" name="palavra"><br>
     </form> 
 
-    
+    <button onclick="verificar()">Verificar palavra</button><br><br>  
+
     <p id="palavraf"></p>
 
     <script>
-         function verificar(){
-            let palavra;
-
-            if (palavra ) {
-                document.getElementById("palavraf").innerText = "A palavra " + palavra + " é um Palindromo.";
-            } else
-            document.getElementById("palavraf").innerText = "A palavra " + palavra + " não é um Palindromo.";
-
-
+        function verificar() {
+            var palavra = document.getElementById('palavra').value.toLowerCase();
+            var reverso = palavra.split('').reverse().join('');
+        
+            if (palavra === reverso) {
+                document.getElementById('palavraf').textContent = "A palavra" + palavra + " é um palíndromo!";
+            } else {
+                document.getElementById('palavraf').textContent = "A palavra" + palavra + " não é um palíndromo!";
+            }
         }
-    </script>
+            </script>
 </body>
 </html>
