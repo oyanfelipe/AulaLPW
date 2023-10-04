@@ -26,8 +26,8 @@
             let quant = 0;
             let palavra = document.getElementById('palavra').value.toLowerCase();
 
-            for (i = 0; i < string.length; i++) {
-                if (string[i].toLowerCase() === 'a' || string[i].toLowerCase() === 'e' || string[i].toLowerCase() === 'i' || string[i].toLowerCase() === 'o' || string[i].toLowerCase() === 'u') {
+            for (i = 0; i < palavra.length; i++) {
+                if (palavra[i].toLowerCase() === 'a' || palavra[i].toLowerCase() === 'e' || palavra[i].toLowerCase() === 'i' || palavra[i].toLowerCase() === 'o' || palavra[i].toLowerCase() === 'u') {
                     quant += 1;
 
                     document.getElementById("resultado").innerText += quant;
