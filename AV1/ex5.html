@@ -19,17 +19,19 @@
     
 
     <script>
-        let i;
-        let quant;
-        let palavra = document.getElementById('palavra').value.toLowerCase();
+        
 
         function verificar() {
+            let i;
+            let quant;
+            let palavra = document.getElementById('palavra').value.toLowerCase();
+
             for (i = 0; i < string.length; i++) {
                 if (string[i].toLowerCase() === 'a' || string[i].toLowerCase() === 'e' || string[i].toLowerCase() === 'i' || string[i].toLowerCase() === 'o' || string[i].toLowerCase() === 'u') {
                     quant += 1;
                 }
             }
-    }
+        }
     document.getElementById("resultado").innerText = quant;
         
     </script>
