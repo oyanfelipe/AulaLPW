@@ -14,12 +14,15 @@
     <script>
         
         function repeticao(){
-            var n = 1;
-            for(i = 20; i < 40; i++){
-                
-                document.getElementById("resultado").innerText += i;
-
-            }
+            var cont =1 ;
+            while (cont<=100) {
+                var resto = cont%2;
+                if (resto ==0){
+                    mostra("Par " + cont);
+        }
+        cont = cont + 1;
+    }
+    mostra("FIM");
         }
     </script>
 </body>
