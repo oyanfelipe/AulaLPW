@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exibir os 10 primeiros numeros pares usando while</h1>
+    <h1>Exibir os 10 primeiros numeros pares usando for</h1>
     
     <button onclick="repeticao()">Exibir</button>
     <p id="resultado"></p>
@@ -15,19 +15,10 @@
         
         function repeticao(){
             var n = 1;
-            var controle = true;
-            var acc = 0;
+            for(i = 20; i < 40; i++){
+                
+                document.getElementById("resultado").innerText += i;
 
-            while(controle){
-                if (n%2 == 0) {
-                    document.getElementById("resultado").innerText += n;
-                    acc++;
-                }
-
-                if (acc = 40) {
-                        controle = false;
-                    }
-                n++;
             }
         }
     </script>
