@@ -11,7 +11,9 @@
         <input type="text" id="palavra" name="palavra"><br>
     </form> 
 
-    <p>Digite uma palavra: </p>
+    <button onclick="verificar()">Enviar</button>
+
+    <p>A palavra possui: </p>
     <br>
     <p id="resultado"></p>
     
@@ -21,10 +23,12 @@
         let quant;
         let palavra = document.getElementById('palavra').value.toLowerCase();
 
-        for (i = 0; i < string.length; i++) {
-        if (string[i].toLowerCase() === 'a' || string[i].toLowerCase() === 'e' || string[i].toLowerCase() === 'i' || string[i].toLowerCase() === 'o' || string[i].toLowerCase() === 'u') {
-            quant += 1;
-        }
+        function verificar() {
+            for (i = 0; i < string.length; i++) {
+                if (string[i].toLowerCase() === 'a' || string[i].toLowerCase() === 'e' || string[i].toLowerCase() === 'i' || string[i].toLowerCase() === 'o' || string[i].toLowerCase() === 'u') {
+                    quant += 1;
+                }
+            }
     }
     document.getElementById("resultado").innerText = quant;
         
