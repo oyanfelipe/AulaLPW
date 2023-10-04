@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3 - Imprimir nome completo</title>
+</head>
+<body>
+    <div>
+        <h1 class="div1">Imprimir nome completo</h1>
+
+        <form >
+            <label for="nome">Digite seu primeiro nome:</label><br>
+            <input type="text" id="pnome" name="pnome"><br>
+            <label for="nome">Digite seu nome do meio:</label><br>
+            <input type="text" id="mnome" name="mnome"><br>
+            <label for="nome">Digite seu último nome:</label><br>
+            <input type="text" id="unome" name="unome"><br>
+        </form> 
+
+        <button onclick="coletar()">Verificar</button>
+
+        <p >O seu nome completo é:</p>
+        <br>
+        <p id="nomec"></p>
+    
+    </div>
+
+
+    <script>
+        
+
+        function coletar(){
+            let nomec;
+            let pnome = document.getElementById("nome").value;
+            let mnome = document.getElementById("nome").value;
+            let unome = document.getElementById("nome").value;
+
+            nomec = pnome + mnome + unome
+
+        
+            document.getElementById("nomec").innerText = "A palavra começa com a";
+            
+            
+
+        }
+    </script>
+</body>
+</html>
