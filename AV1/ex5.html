@@ -6,16 +6,27 @@
     <title>Questão 5 - Contar vogais de palavra</title>
 </head>
 <body>
-    <p>O maior numero é : </p>
-    <br>
-    <p id="maiorn"></p>
-    <p>O menor numero é : </p>
-    <br>
-    <p id="menorn"></p>
+    <form >
+        <label for="nome">Digite uma palavra:</label><br>
+        <input type="text" id="palavra" name="palavra"><br>
+    </form> 
 
+    <p>Digite uma palavra: </p>
+    <br>
+    <p id="resultado"></p>
+    
 
     <script>
-         
+        let i;
+        let quant;
+        let palavra = document.getElementById('palavra').value.toLowerCase();
+
+        for (i = 0; i < string.length; i++) {
+        if (string[i].toLowerCase() === 'a' || string[i].toLowerCase() === 'e' || string[i].toLowerCase() === 'i' || string[i].toLowerCase() === 'o' || string[i].toLowerCase() === 'u') {
+            quant += 1;
+        }
+    }
+    document.getElementById("resultado").innerText = quant;
         
     </script>
 </body>
