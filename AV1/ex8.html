@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 8</title>
+</head>
+<body>
+    <form >
+        <label for="nome">Digite seu primeiro nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="nome">Digite sua idade:</label><br>
+        <input type="text" id="idade" name="idade"><br>
+    <br>
+
+    <button onclick="receber()">Enviar</button>
+
+    <br>
+    <p id="resultado"></p>
+
+
+    <script>
+
+        receber(){
+            let nome = document.getElementById("nome").value;
+            let idade = document.getElementById("idade").value;
+
+            if (0 == idade && idade < 12) {
+                let resultado = nome + " você é uma criança";
+                document.getElementById("resultado").innerText = resultado;
+            } else if (13 < idade && idade < 17) {
+                let resultado = nome + " você é um adolescente";
+                document.getElementById("resultado").innerText = resultado;
+            } else if (18 < idade && idade < 59) {
+                let resultado = nome + " você é um adulto";
+                document.getElementById("resultado").innerText = resultado;
+            } else if (idade > 60) {
+                let resultado = nome + " você é um idoso";
+                document.getElementById("resultado").innerText = resultado;
+            }
+
+
+        }
+    </script>
+</body>
+</html>
