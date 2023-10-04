@@ -37,23 +37,23 @@
             if (resultado < 17) {
                 document.getElementById("situacao").innerText = " Muito abaixo do peso";
             } 
-            if (17 < resultado && resultado < 18.49 ) {
-                document.getElementById("texto").innerText = "Abaixo do peso";
+            else if (17 < resultado && resultado < 18.49 ) {
+                document.getElementById("situacao").innerText = "Abaixo do peso";
             } 
-            if (18.5 < resultado && resultado < 24.99 ){
-                document.getElementById("texto").innerText = " Peso normal";
+            else if (18.5 < resultado && resultado < 24.99 ){
+                document.getElementById("situacao").innerText = " Peso normal";
             }
-            if (25 < resultado && resultado < 29.99 ){
-                document.getElementById("texto").innerText = " Acima do peso";
+            else if (25 < resultado && resultado < 29.99 ){
+                document.getElementById("situacao").innerText = " Acima do peso";
             }
-            if (30 < resultado && resultado < 34.99 ){
-                document.getElementById("texto").innerText = "Obesidade I";
+            else if (30 < resultado && resultado < 34.99 ){
+                document.getElementById("situacao").innerText = "Obesidade I";
             }
-            if (35 < resultado && resultado < 39.99 ){
-                document.getElementById("texto").innerText = " Obesidade II (severa)";
+            else if (35 < resultado && resultado < 39.99 ){
+                document.getElementById("situacao").innerText = " Obesidade II (severa)";
             }
-            if (resultado > 40){
-                document.getElementById("texto").innerText = "Obesidade III (mórbida)";
+            else if (resultado > 40){
+                document.getElementById("situacao").innerText = "Obesidade III (mórbida)";
             }
             
 
