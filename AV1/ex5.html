@@ -28,8 +28,9 @@
 
             for (i = 0; i < palavra.length; i++) {
                 if (palavra[i].toLowerCase() === 'a' || palavra[i].toLowerCase() === 'e' || palavra[i].toLowerCase() === 'i' || palavra[i].toLowerCase() === 'o' || palavra[i].toLowerCase() === 'u') {
-                    
-                    document.getElementById("resultado").innerText =+ quant;
+                    quant += 1;
+
+                    document.getElementById("resultado").innerText = quant;
                 }
                 
             }
