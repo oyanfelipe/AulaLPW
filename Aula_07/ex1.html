@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+</head>
+<body>
+    <form>
+        <p>Insira um número:</p>
+        <input type="text" id ="c1" onkeydown="num">
+        <p id="resultado1"></p>
+        <p id="resultado2"></p>
+        <p id="resultado3"></p>
+        <p id="resultado4"></p>
+        <p id="resultado5"></p>
+        <p id="resultado6"></p>
+        <p id="resultado7"></p>
+        <p id="resultado8"></p>
+        <p id="resultado9"></p>
+        <p id="resultado10"></p>
+    </form>
+
+    <script>
+        let mutli;
+
+         var num = Number(document.getElementById("num").value);
+
+         multi1 = num * 1
+         multi2 = num * 2
+         multi3 = num * 3
+         multi4 = num * 4
+         multi5 = num * 5
+         multi6 = num * 6
+         multi7 = num * 7
+         multi8 = num * 8
+         multi9 = num * 9
+         multi10 = num * 10
+
+         document.getElementById("resultado1").innerText = multi1;
+         document.getElementById("resultado2").innerText = multi2;
+         document.getElementById("resultado3").innerText = multi3;
+         document.getElementById("resultado4").innerText = multi4;
+         document.getElementById("resultado5").innerText = multi5;
+         document.getElementById("resultado6").innerText = multi6;
+         document.getElementById("resultado7").innerText = multi7;
+         document.getElementById("resultado8").innerText = multi8;
+         document.getElementById("resultado9").innerText = multi9;
+         document.getElementById("resultado10").innerText = multi10;
+
+    </script>
+</body>
+</html>
