@@ -7,13 +7,21 @@
 </head>
 <body>
     <form>
-        <p>Insira um número:33333</p>
-        <input id ="num" onkeyup="mostrarTabuada()">
+        <p>Insira um número:</p>
+        <input id ="texto" onkeyup="letrasMaiores()">
         <p id="resultado"></p>
     </form>
 
     <script>
+        function letrasMaiores() {
+
+            var texto = document.getElementById("texto").value;
+            var maior = texto.toUpperCase;
+
+            var resultado = document.getElementById("resultado").innerText = maior;
+
         
+        }
     </script>
 </body>
 </html>
