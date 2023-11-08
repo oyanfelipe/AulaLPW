@@ -8,7 +8,7 @@
 <body>
     <form>
         <p>Digite um texto:</p>
-        <input id ="texto" onkeydown="letrasMaiores()">
+        <input id ="texto" onkeyup="letrasMaiores()">
         <p id="resultado"></p>
     </form>
 
@@ -18,7 +18,7 @@
             var texto = document.getElementById("texto").value;
             var maior = texto.toUpperCase();
 
-            var resultado = document.getElementById("texto").innerText = maior;
+            var resultado = document.getElementById("resultado").innerText = maior;
 
         
         }
