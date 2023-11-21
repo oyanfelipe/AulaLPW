@@ -9,17 +9,13 @@
     <form>
         <p>Digite um texto:</p>
         <input id ="texto" onkeyup="letrasMaiores()">
-        <p id="resultado"></p>
     </form>
 
     <script>
         function letrasMaiores() {
 
             var texto = document.getElementById("texto").value;
-            var maior = texto.toUpperCase();
-
-            var resultado = document.getElementById("resultado").innerText = maior;
-
+            var maior = texto.value.toUpperCase();
         
         }
     </script>
