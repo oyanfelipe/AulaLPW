@@ -10,11 +10,10 @@
 
     <form >
         <label for="nome">Digite uma palavra:</label><br>
-        <input type="text" id="palavra" name="palavra"><br>
+        <input type="text" id="palavra" name="palavra" onkeyup="verificar()"><br>
     </form> 
 
-    <button onkeyup="verificar()">Verificar palavra</button><br><br>  
-
+    
     <p id="palavraf"></p>
 
     <script>
