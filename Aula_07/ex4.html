@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5 - Contar vogais de palavra</title>
+</head>
+<body>
+    <form >
+        <label for="nome">Digite uma palavra:</label><br>
+        <input type="text" id="palavra" name="palavra" onkeyup="verificar()"><br>
+    </form> 
+
+
+    <p>A palavra possui: </p>
+    <br>
+    <p id="resultado"></p>
+    
+
+    <script>
+        
+
+        function verificar() {
+            let i = 0;
+            let quant = 0;
+            let palavra = document.getElementById('palavra').value.toLowerCase();
+
+            for (i = 0; i < palavra.length; i++) {
+                if (palavra[i].toLowerCase() === 'a' || palavra[i].toLowerCase() === 'e' || palavra[i].toLowerCase() === 'i' || palavra[i].toLowerCase() === 'o' || palavra[i].toLowerCase() === 'u') {
+                    quant += 1;
+
+                    document.getElementById("resultado").innerText = quant;
+                }
+                
+            }
+        }
+    
+        
+    </script>
+</body>
+</html>
