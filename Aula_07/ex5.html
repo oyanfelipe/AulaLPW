@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onmouseover="verificar()">Ver horário</button>
+    <p id="resultado"></p>
+</body>
+<script>
+    function verificar() {
+        let dataAtual = new Date();
+        document.getElementById("resultado").innerText = dataAtual;
+    }
+</script>
+</html>
